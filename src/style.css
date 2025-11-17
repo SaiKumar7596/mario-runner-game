@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #5fc0ff 0%, #b3ecff 40%, #8ac926 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#game-container {
+  background: #87ceeb;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  padding: 16px 16px 24px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-size: 1.4rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#score {
+  font-weight: bold;
+  color: #fffbe7;
+}
+
+#game-canvas {
+  border-radius: 6px;
+  border: 3px solid #1b3a4b;
+  background: linear-gradient(180deg, #87ceeb 0%, #87ceeb 60%, #3b7a1f 60%, #3b7a1f 100%);
+  display: block;
+}
+
+#controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+#restart-btn {
+  padding: 6px 14px;
+  border-radius: 4px;
+  border: none;
+  background: #ff6b35;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 3px 0 #c4451f;
+  transition: transform 0.05s ease, box-shadow 0.05s ease, background 0.1s ease;
+}
+
+#restart-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #c4451f;
+}
+
+#restart-btn:hover {
+  background: #ff8b5a;
+}
+
+@media (max-width: 900px) {
+  #game-canvas {
+    width: 100%;
+    height: auto;
+  }
+}

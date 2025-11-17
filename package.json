@@ -1,0 +1,21 @@
+{
+  "name": "mario-runner-game",
+  "version": "1.0.0",
+  "description": "Simple Mario-style 2D runner game using pure JavaScript, canvas, and ES6 modules.",
+  "main": "src/game.js",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  },
+  "keywords": [
+    "mario",
+    "runner",
+    "game",
+    "canvas",
+    "javascript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
