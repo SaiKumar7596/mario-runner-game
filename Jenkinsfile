@@ -67,7 +67,7 @@ pipeline {
 
         stage('Deploy on EC2 via SSH') {
             steps {
-                sshagent(['docker-server']) {    // Jenkins SSH key credential ID
+                sshagent(['ssh-deploy']) {    // Jenkins SSH key credential ID
                     sh """
                         ssh -o StrictHostKeyChecking=no ubuntu@${DEPLOY_HOST} '
                             echo "Stopping old container if exists..."
